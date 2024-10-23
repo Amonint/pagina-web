@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Destino</a></li>
+            <li><a href="#">Cosas que hacer</a></li>
+            <li><a href="#">Logística</a></li>
+        </ul>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="explore-section">
+        <div class="text-content">
+            <h1>Explora nuestra bella ciudad</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum.</p>
+            <button class="explore-btn">Descubre más</button>
+        </div>
+        <div class="image-content">
+            <!-- Aquí va la imagen -->
+            <img src="Assets/Cisne.jpg" alt="Imagen de exploración">
+        </div>
+    </div>
+
+    <div class="stats-section">
+        <div class="stat-box">
+            <h2>4.5K</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="stat-box">
+            <h2>12+</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="stat-box">
+            <h2>6.9K</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="stat-box">
+            <h2>4.9</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+
+    <section class="tourist-places">
+        <section class="tourist-section">
+            <div class="header-box">
+                <h1>Lugares Turísticos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum.</p>
+            </div>
+            <div class="icon-and-stars">
+                <img src="Assets/2jpg.jpg" alt="Info Icon" class="info-icon">
+                <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="grid-gallery">
+            <div class="grid-item"><img src="Assets/1jpg.jpg" alt="Lugar 1"></div>
+            <div class="grid-item"><img src="Assets/2.jpg" alt="Lugar 2"></div>
+            <div class="grid-item"><img src="Assets/2jpg.jpg" alt="Lugar 3"></div>
+            <div class="grid-item"><img src="Assets/4.jpg" alt="Lugar 4"></div>
+            <div class="grid-item"><img src="Assets/5.jpg" alt="Lugar 5"></div>
+            <div class="grid-item"><img src="Assets/6.jpg" alt="Lugar 6"></div>
+        </div>
+    </section>
+    <section class="tourist-section">
+        <div class="header-box">
+            <h1>Lugares Turísticos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum.</p>
+        </div>
+        <div class="icon-and-stars">
+            <img src="Assets/2jpg.jpg" alt="Info Icon" class="info-icon">
+            <div class="stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+        </div>
+        <section class="image-grid">
+            <div class="grid-item">
+                <img src="Assets/1jpg.jpg" alt="Comida típica">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/2.jpg" alt="Hombre y perro">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum.</p>
+            </div>
+            <div class="grid-item">
+                <img src="Assets/4.jpg" alt="Flores">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum.</p>
+            </div>
+        </section>
+    </section>
+
+    
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.navbar-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
